@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Our Groups</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #00ff88, #00cc66);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin: 0 0 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    }
+    .big-btn {
+      background: #000;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 16px 40px;
+      border: none;
+      border-radius: 50px;
+      margin: 20px 0 40px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .card {
+      background: white;
+      color: #333;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 380px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card i {
+      font-size: 3rem;
+      margin-right: 20px;
+    }
+    .wa-card { border-left: 8px solid #25D366; }
+    .tg-card { border-left: 8px solid #0088cc; }
+    .join-btn {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+    .tg .join-btn { background: #0088cc; }
+  </style>
+</head>
+<body>
+
+  <h1>Telegram & WhatsApp</h1>
+  <button class="big-btn">Add Join Now Button</button>
+
+  <div class="card wa-card">
+    <div style="display:flex; align-items:center;">
+      <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+      <div>
+        <h2 style="margin:0; font-size:1.4rem;">WhatsApp Group</h2>
+        <p style="margin:4px 0 0; opacity:0.8;">Get instant updates!</p>
+      </div>
+    </div>
+    <a href="https://chat.whatsapp.com/你的群链接" target="_blank">
+      <button class="join-btn">Join Now →</button>
+    </a>
+  </div>
+
+  <div class="card tg-card">
+    <div style="display:flex; align-items:center;">
+      <i class="fab fa-telegram-plane" style="color:#0088cc;"></i>
+      <div>
+        <h2 style="margin:0; font-size:1.4rem;">Telegram Group</h2>
+        <p style="margin:4px 0 0; opacity:0.8;">Join our community now!</p>
+      </div>
+    </div>
+    <a href="https://t.me/你的频道或群链接" target="_blank">
+      <button class="join-btn">Join Now →</button>
+    </a>
+  </div>
+
+</body>
+</html>
