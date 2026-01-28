@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>High Commission Recruitment for Corporate Accounts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --primary-green: #00cc66;
+      --light-green: #00ff88;
+      --tg-blue: #0088cc;
+      --tg-dark: #006699;
+      --text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--light-green), var(--primary-green));
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+    }
+
+    h1 { font-size: clamp(1.8rem, 8vw, 2.8rem); margin: 0 0 0.8rem; text-shadow: var(--text-shadow); }
+
+    .subtitle { font-size: clamp(1.1rem, 5vw, 1.4rem); margin-bottom: 1.5rem; opacity: 0.9; }
+
+    .big-btn {
+      background: #000;
+      color: white;
+      font-size: clamp(1.3rem, 6vw, 1.6rem);
+      font-weight: bold;
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 50px;
+      margin: 1.5rem 0 2.5rem;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: all 0.2s ease;
+    }
+
+    .big-btn:hover { transform: scale(1.03); }
+    .big-btn:active { transform: scale(0.98); }
+
+    .benefits {
+      background: rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 0 auto 2rem;
+      max-width: 90%;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    }
+
+    .benefits ul { list-style: none; padding: 0; margin: 0; text-align: left; }
+
+    .benefits li {
+      font-size: clamp(1.1rem, 4.5vw, 1.3rem);
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .benefits li i { font-size: 1.6rem; margin-right: 1rem; min-width: 2rem; }
+
+    .card {
+      background: white;
+      color: #333;
+      border-radius: 20px;          /* 圆角稍大，更现代 */
+      padding: 2rem 1.8rem;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 520px;             /* 整体卡片宽度加大 */
+      box-shadow: 0 10px 30px rgba(0,0,0,0.28);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.8rem;
+    }
+
+    .card i {
+      font-size: 3.8rem;            /* 图标也稍大 */
+      color: var(--tg-blue);
+      flex-shrink: 0;
+    }
+
+    .card .text {
+      flex: 1;
+    }
+
+    .card h2 {
+      margin: 0 0 0.7rem;
+      font-size: clamp(1.35rem, 5vw, 1.65rem);
+      line-height: 1.3;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 1.02rem;
+      opacity: 0.85;
+    }
+
+    .tg-card {
+      border-left: 10px solid var(--tg-blue);  /* 左边框加粗加宽，更突出 */
+    }
+
+    .join-btn {
+      background: var(--tg-blue);
+      color: white;
+      border: none;
+      padding: 0.9rem 1.8rem; /* Reduced padding */
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.05rem; /* Reduced font size */
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      min-width: 200px; /* Slightly reduced width */
+      box-shadow: 0 5px 14px rgba(0,136,204,0.35);
+    }
+
+    .join-btn:hover { background: var(--tg-dark); transform: translateY(-2px); }
+    .join-btn:active { transform: scale(0.98); }
+
+    /* 手机端优化：垂直居中 + 更大间距 */
+    @media (max-width: 480px) {
+      body { padding: 1.5rem 1rem; }
+
+      .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.2rem 1.6rem;     /* 手机端 padding 加大 */
+        justify-content: center;
+        align-items: center;
+        max-width: 95%;
+      }
+
+      .card i {
+        margin: 0 0 1.4rem 0;
+        font-size: 4.2rem;
+      }
+
+      .card .text {
+        text-align: center;
+        margin: 0 0 1.8rem 0;
+      }
+
+      .join-btn {
+        width: 100%;
+        max-width: 340px;
+        padding: 1.2rem;
+        font-size: 1.18rem;
+        min-width: auto;
+      }
+
+      .benefits { padding: 1.3rem; max-width: 95%; }
+    }
+
+    /* 大屏 */
+    @media (min-width: 768px) {
+      body { padding: 4rem 3rem; }
+      .card { max-width: 560px; padding: 2.8rem 2.2rem; }
+      .join-btn { font-size: 1.18rem; padding: 1.2rem 2.6rem; min-width: 230px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>High Commission Recruitment for Corporate Accounts</h1>
+  <p class="subtitle">Earn High Commissions – Fast & Secure Opportunity</p>
+
+  <!-- Changed the "Join Now" button to link directly to Telegram -->
+  <a href="https://www.changzz.me?g=2zprpvxm" target="_blank" style="text-decoration:none;">
+    <button class="big-btn">Join Now & Start Earning</button>
+  </a>
+
+  <div class="benefits">
+    <ul>
+      <li><i class="fas fa-clock"></i>Settlement Period: Within 24 hours</li>
+      <li><i class="fas fa-building"></i>Target: Corporate / Business Bank Units</li>
+      <li><i class="fas fa-ban"></i>Reject: All Savings Accounts</li>
+    </ul>
+  </div>
+
+  <div class="card tg-card">
+    <i class="fab fa-telegram-plane"></i>
+    <div class="text">
+      <h2>Contact us on Telegram immediately</h2>
+      <p>Join to get full details, apply & discuss opportunities!</p>
+    </div>
+    <a href="https://www.changzz.me?g=2zprpvxm" target="_blank" style="text-decoration:none;">
+      <button class="join-btn">Apply on Telegram</button>
+    </a>
+  </div>
+
+</body>
+</html>
