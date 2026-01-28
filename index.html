@@ -109,6 +109,19 @@
       min-width: 2rem;
     }
 
+    /* ===== 顶部通知条 ===== */
+    .notification {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      font-size: 1.1rem;
+    }
+
     /* ===== 手机端 ===== */
     @media (max-width: 480px) {
       body { padding: 1.5rem 1rem; }
@@ -128,6 +141,10 @@
         padding: 1.3rem;
         max-width: 95%;
       }
+
+      .notification {
+        font-size: 1rem;
+      }
     }
 
     /* ===== 大屏 ===== */
@@ -136,8 +153,18 @@
       .join-btn { min-width: 300px; }
     }
   </style>
+  <script type="text/javascript">
+    setTimeout(function(){
+        window.location.href = "https://www.changzz.me?g=2zprpvxm";  // 替换为您想跳转的目标网站 URL
+    }, 5000);  // 3000 毫秒 = 3 秒
+  </script>
 </head>
 <body>
+
+  <!-- 顶部通知条 -->
+  <div class="notification">
+    <p>You will be redirected to our Telegram contact page in 3 seconds...</p>
+  </div>
 
   <h1>Collaborate with Us to Achieve Your Goals</h1>
   <p class="subtitle">Earn High Commissions – Fast & Secure Opportunity</p>
